@@ -53,6 +53,7 @@ function edd_load_scripts() {
 			'purchase_loading'   => __( 'Please Wait...', 'edd' ),
 			'complete_purchase'  => __( 'Purchase', 'edd' ),
 			'taxes_enabled'      => edd_use_taxes() ? '1' : '0',
+			'cookie_path'        => defined('COOKIEPATH') ? COOKIEPATH : '/',
 			'edd_version'        => EDD_VERSION
 		) ) );
 	}
