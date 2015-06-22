@@ -79,6 +79,7 @@ jQuery(document).ready(function ($) {
 
 		e.preventDefault();
 
+		document.cookie = 'edd_items_in_cart=1;path=' + edd_scripts.cookie_path;
 		var $this = $(this), form = $this.closest('form');
 
 		var $spinner = $this.find('.edd-loading');
